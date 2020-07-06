@@ -1,1 +1,1 @@
-# Php training for autunmn's intership (ULB)
+# Php training for autumn's intership (ULB)

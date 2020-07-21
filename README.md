@@ -29,7 +29,6 @@ Three big points :
 |Address   |varchar |
 |TotalPrice|float   |
 |Drive     |bool    |
-|Products  |int  [] | 
 
 
 ### Product
@@ -52,4 +51,4 @@ This table will be used to put products into an order
 
 Database Diagram : 
 
-(DatabaseSchema.png "Diagram")
+(DatabaseSchema.PNG "Diagram")

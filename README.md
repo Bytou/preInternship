@@ -39,3 +39,17 @@ Three big points :
 |Id       |int     |
 |Label    |varchar |
 |Price    |varchar |
+
+### ProductsList
+
+This table will be used to put products into an order
+
+| Colomne | Type   |
+|---------|:------:|
+|IdOrder  |int     |
+|IdProduct|varchar |
+
+
+Database Diagram : 
+
+(DatabaseSchema.png "Diagram")

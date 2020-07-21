@@ -19,4 +19,23 @@ Three big points :
 |Lastname |varchar |
 |Email    |varchar |
 |Password |varchar |
-|Orders   |array[] |
+
+### Order
+
+| Colomne  | Type   |
+|----------|:------:|
+|Id        |int     |
+|IdUser    |int     |
+|Address   |varchar |
+|TotalPrice|float   |
+|Drive     |bool    |
+|Products  |int  [] | 
+
+
+### Product
+
+| Colomne | Type   |
+|---------|:------:|
+|Id       |int     |
+|Label    |varchar |
+|Price    |varchar |

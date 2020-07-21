@@ -51,4 +51,4 @@ This table will be used to put products into an order
 
 Database Diagram : 
 
-!(DatabaseSchema.PNG "Diagram")
+(DatabaseSchema.PNG "Diagram")

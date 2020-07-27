@@ -27,7 +27,7 @@ Three big points :
 |Id        |int     |
 |IdUser    |int     |
 |Address   |varchar |
-|TotalPrice|float   |
+|TotalPrice|decimal |
 |Drive     |bool    |
 
 
@@ -37,7 +37,7 @@ Three big points :
 |---------|:------:|
 |Id       |int     |
 |Label    |varchar |
-|Price    |varchar |
+|Price    |decimal |
 
 ### ProductsList
 
@@ -46,7 +46,7 @@ This table will be used to put products into an order
 | Colomne | Type   |
 |---------|:------:|
 |IdOrder  |int     |
-|IdProduct|varchar |
+|IdProduct|int     |
 
 
 Database Diagram : 

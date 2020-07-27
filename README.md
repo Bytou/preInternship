@@ -41,7 +41,7 @@ Three big points :
 
 ### ProductsList
 
-This table will be used to put products into an order
+This table will be used to put some products into an order
 
 | Colomne | Type   |
 |---------|:------:|

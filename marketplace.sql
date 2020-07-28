@@ -44,7 +44,7 @@ CREATE TABLE `orders` (
   `Id` int(11) NOT NULL,
   `IdUser` int(11) NOT NULL,
   `Address` varchar(255) NOT NULL,
-  `TotalPrice` decimal(10,0) NOT NULL,
+  `TotalPrice` decimal(10,2) NOT NULL,
   `Drive` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -70,7 +70,7 @@ DROP TABLE IF EXISTS `product`;
 CREATE TABLE `product` (
   `Id` int(11) NOT NULL,
   `Label` varchar(255) NOT NULL,
-  `Price` decimal(10,0) NOT NULL
+  `Price` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------

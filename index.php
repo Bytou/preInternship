@@ -11,6 +11,8 @@ try {
 	die('Erreur : ' . $e->getMessage());
 }
 
+
+
 ?>
 
 
@@ -26,14 +28,18 @@ try {
 
 	<?php  
 		while ($product = $products->fetch()) {
-			echo ''.$product['Label'] . 'au prix de ' . $product['Price'] . ' € <button>Ajouter à la commande </button> <br> <br>';
+			echo ''.$product['Label'] . 'au prix de ' . $product['Price'] . ' € <button onclick="addList('.$product['Id'].')">Ajouter à la commande </button> <br> <br>';
+
 		}
 	?>
 
 	<hr>
+	<?php 
+	$_SESSION['tryConnection']=false;
+	$_SESSION['tryPassword']=false;
+	?>
 
-
-
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
 

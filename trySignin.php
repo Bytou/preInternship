@@ -26,6 +26,8 @@ if (($req->fetch())[0]==0){
 	$a = $req->fetch();
 	if ($a['Password']==$_POST['mdp']){
 		$_SESSION['name']=''.$a['Firstname'] .' '. $a['Lastname'];
+		$_SESSION['idUser'] = $a['Id'];
+		$_SESSION['products'] = array();
 		header('Location: index.php');
 	} else {
 		$_SESSION['tryConnection']=false;

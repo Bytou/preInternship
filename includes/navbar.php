@@ -1,14 +1,12 @@
-<?php 
-session_start();
-?>
 
-<h1>Market Place</h1>
+
+<h1> <a href="index.php"> Market Place </a></h1>
 
 
 <section>
 	<?php 
 	if (isset($_SESSION['name'])){
-		echo 'Bonjour '.$_SESSION['name'] . ' <a href="deco.php">Déco</a>';
+		echo 'Bonjour '.$_SESSION['name'] . ' <button onclick="window.location.href=\'deco.php\'">Déco</button>';
 	} else { ?>
 		<a href="signup.php">S'inscrire</a> 
 		<a href="signin.php">Se connecter</a> 
@@ -16,7 +14,7 @@ session_start();
 </section>
 
 <nav>
-	<a href=" ">Commande</a>
+	<a href="order.php">Commande</a>
 	<a href=" ">Historique</a>
 	<a href=" ">Profil</a>
 </nav>

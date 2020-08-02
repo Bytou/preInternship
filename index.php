@@ -1,4 +1,7 @@
 <?php 
+
+session_start();
+
 try {
 	$bdd = new PDO('mysql:host=localhost;dbname=marketplace', 'root', 'root');
 } catch (Exception $e) {
@@ -28,13 +31,19 @@ try {
 
 	<?php  
 		while ($product = $products->fetch()) {
-			echo ''.$product['Label'] . 'au prix de ' . $product['Price'] . ' € <button onclick="addList('.$product['Id'].')">Ajouter à la commande </button> <br> <br>';
+			echo ''.$product['Label'] . 'au prix de ' . $product['Price'] . ' € <button onclick="window.location.href=\'addProduct.php?id='. $product['Id'] .'\'">Ajouter à la commande </button> <br> <br>';
 
 		}
 	?>
 
 	<hr>
 	<?php 
+	if (isset($_SESSION['products'])) {
+		foreach ($_SESSION['products'] as $prod) {
+			echo ''.$prod;
+		}
+	}
+	
 	$_SESSION['tryConnection']=false;
 	$_SESSION['tryPassword']=false;
 	?>
